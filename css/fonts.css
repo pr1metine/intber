@@ -1,0 +1,34 @@
+*{
+    font-family: Roboto Slab, 'Times New Roman', Times, serif;
+}
+
+.display1 {
+    font-family: Bungee Shade;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: capitalize;
+    font-feature-settings: 'case' on;
+    color: #C4C4C4;
+}
+
+.display2 {
+    font-family: Bungee Inline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #C4C4C4;
+}
+
+.text1 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #C4C4C4;
+}

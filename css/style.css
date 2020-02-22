@@ -1,0 +1,581 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*************/
+/***My Code***/
+/*************/
+
+html, body{
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: minmax(20px,40px) minmax(20px,40px) minmax(20px,40px) auto minmax(20px,40px);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  min-height: 100%;
+  grid-template-areas:
+  "loginbereich header"
+  "navigation navigation"
+  "sidebar sidebar"
+  "content content"
+  "footer footer";
+}
+.header{
+  grid-area: header;
+  background-color: #4CAF50;
+}
+.loginbereich{
+  grid-area: loginbereich;
+  background-color: #333;
+  text-align: center;
+}
+.navigation{
+  grid-area: navigation;
+  background-color: #333;
+}
+.sidebar{
+  grid-area: sidebar;
+  background-color: #333;
+}
+.content{
+  grid-area: content;
+  /*border: black 1px solid;*/
+
+  /*padding-bottom: 1fr;*/
+  /*margin: auto;*/
+}
+.footer{
+  grid-area: footer;
+  background-color: #4CAF50;
+  /*border: black 1px solid;*/
+  text-align: center;
+  position: relative;
+  /*height: 1fr;*/
+  margin-top: -1fr;
+  clear:both;
+}
+
+@media screen and (min-width:760px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr;
+    grid-template-rows: minmax(30px,60px) minmax(30px,60px) minmax(30px,60px) auto minmax(30px,60px);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    min-height: 100%;
+    grid-template-areas:
+    ". loginbereich header ."
+    ". navigation navigation ."
+    ". sidebar sidebar ."
+    ". content content ."
+    ". footer footer .";
+  }
+}
+
+.gridprofiwahl {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: minmax(0fr,3fr) 3fr 3fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  min-width: 100%;
+  grid-template-areas:
+  "semestertafel1 semestertafel2"
+  "fehlermeldung fehlermeldung"
+  "wahlbogen wahlbogen";
+}
+
+.semestertafel1{
+  grid-area: semestertafel1;
+  background-color: white;
+  margin-bottom: auto;
+}
+.semestertafel2{
+  grid-area: semestertafel2;
+  background-color: white;
+  text-align: center;
+  margin-bottom: auto;
+}
+.semestertafel3{
+  grid-area: semestertafel3;
+  background-color: white;
+  margin-bottom: auto;
+}
+.semestertafel4{
+  grid-area: semestertafel4;
+  background-color: white;
+  text-align: center;
+  margin-bottom: auto;
+}
+.fehlermeldung{
+  grid-area: fehlermeldung;
+  background-color: white;
+}
+.wahlbogen{
+  grid-area: wahlbogen;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width:760px){
+  .gridprofilwahl {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: minmax(0fr,3fr) 3fr 3fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    min-width: 100%;
+    grid-template-areas:
+    "semestertafel1 semestertafel2"
+    "fehlermeldung fehlermeldung"
+    "wahlbogen wahlbogen";
+  }
+}
+
+.gridvergleich {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  min-width: 100%;
+  grid-template-areas:
+  "profil1"
+  "profil2"
+  "profil3"
+  "profil4";
+}
+.profil1{
+  grid-area: st11ges;
+  background-color: white;
+  margin-bottom: auto;
+}
+.profil2{
+  grid-area: st11muk;
+  background-color: white;
+  margin-bottom: auto;
+}
+.profil3{
+  grid-area: st11nat;
+  background-color: white;
+  margin-bottom: auto;
+}
+.profil4{
+  grid-area: st11spr;
+  background-color: white;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width:760px){
+  .gridvergleich {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    min-width: 100%;
+    grid-template-areas:
+    "profil1 profil2"
+    "profil3 profil4";
+  }
+}
+
+.gridangaben {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 1fr;
+  min-width: 100%;
+  grid-template-areas:
+  "profilaktivierung"
+  "ags";
+}
+.profilaktivierung {
+  grid-area: profilaktivierung;
+  background-color: white;
+  margin-bottom: auto;
+}
+.ags{
+  grid-area: ags;
+  background-color: white;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width:760px){
+  .gridangaben {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 1fr;
+    min-width: 100%;
+    grid-template-areas:
+    "profilaktivierung"
+    "ags";
+  }
+}
+
+.griduebersicht {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(0fr,2fr) minmax(0fr,2fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 10px;
+  min-width: 100%;
+  grid-template-areas:
+  "profil_ue"
+  "ags_ue";
+}
+.profil_ue {
+  grid-area: profil_ue;
+  background-color: white;
+  margin-bottom: auto;
+}
+.ags_ue{
+  grid-area: ags_ue;
+  background-color: white;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width:760px){
+  .griduebersicht {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0fr,2fr) minmax(0fr,2fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 1fr;
+    min-width: 100%;
+    grid-template-areas:
+    "profil_ue"
+    "ags_ue";
+  }
+}
+
+.nav-login{
+  float:right;
+}
+
+/*Navigations- und Sidebar*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	  background-color: #333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding:10px 16px;
+    text-decoration: none;
+}
+
+/*.active {background-color: #4CAF50;}*/
+li a:hover:not(.active) {background-color: #4CAF50;}
+
+/*Navigationsbar*/
+.navigation ul {overflow:hidden;}
+.navigation li {float: left;}
+.navigation li a {text-align: center;}
+
+/*Sidebar*/
+.sidebar ul {overflow:hidden;}
+.sidebar li {float: left;}
+.sidebar li a {text-align: center;}
+
+/* basic styling */
+div {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+/*tr:nth-child(even){background-color: #A2A2A2}*/
+
+th {
+    font-size: 14;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+
+}
+.eingabePraktikum td{
+  background-color: #A2A2A2;
+  text-align:right;
+  border: none;
+}
+
+.uebersichtPraktikum table{
+  width: auto;
+}
+.uebersichtPraktikum td{
+  padding: 1px;
+  font-size: 10px;
+}
+
+/*Sportwahl*/
+.uebersichtSport tr:nth-child(odd){background-color: #A2A2A2}
+.uebersichtSport table{
+  width: auto;
+}
+
+.uebersichtSport tr:hover{
+  /*background-color: #4CAF50;*/
+}
+.eingabeSportwahl td{
+  background-color: #A2A2A2;
+  text-align:right;
+  border: none;
+}
+.eingabeSportwahl input[type=text]{
+  max-width:500px;
+}
+
+/* Tabelle Fehlermeldungen */
+.uebersichtFehlermeldung td, tr, th{
+}
+.uebersichtFehlermeldung tr:nth-child(even){
+  background-color: #ffffff;
+}
+
+.wahlep td{
+  padding: 1px;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+
+.wahlep tr:nth-child(even){background-color: white;}
+
+.profilwahl td{
+  padding: 1px;
+  font-size: 14px;
+  width: inherit;
+  text-align: center;
+}
+
+.profilwahl tr:nth-child(even){background-color: white;}
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio],input[type=checkbox] {
+		display:none;
+
+	}
+
+
+	input[type=radio] + label,input[type=checkbox] + label {
+		display:inline-block;
+		margin:2px;
+		padding: 12px 12px;
+		font-size: 20px;
+		line-height: 20px;
+
+		color: black;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #A2A2A2;
+    color:white;
+	}
+
+  .profilwahl input[type=radio]+ label:hover,input[type=checkbox] + label:hover {
+      background-color: #333;
+      color:white;
+  	}
+
+  .profilwahl input[type=radio] + label,.profilwahl input[type=checkbox] + label {
+    color:black;
+	}
+  .profilwahl input[type=radio]:disabled + label,.profilwahl input[type=checkbox]:disabled + label {
+    background-color:white;
+    cursor:default;
+  }
+	.profilwahl input[type=radio]:checked + label,.profilwahl input[type=checkbox]:checked + label {
+		background-image: none;
+		background-color:#4CAF50;
+    color:white;
+	}
+
+
+  .wahlep input[type=radio]+ label:hover,input[type=checkbox] + label:hover {
+      background-color: #333;
+      color:white;
+  	}
+
+  .wahlep input[type=radio] + label,.wahlep input[type=checkbox] + label {
+    color:black;
+	}
+  .wahlep input[type=radio]:disabled + label,.wahlep input[type=checkbox]:disabled + label {
+    background-color:white;
+    cursor:default;
+  }
+	.wahlep input[type=radio]:checked + label,.wahlep input[type=checkbox]:checked + label {
+		background-image: none;
+		background-color:#4CAF50;
+    color:white;
+	}
+
+input[type=submit] {
+    background-color: #A2A2A2; /* Green */
+    border: none;
+    color: black;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: auto;
+    cursor: pointer;
+    width:auto;
+    height:20px;
+    float: right;
+}
+input[type=submit]:hover{
+  background-color: #333;
+  color: white;
+}
+
+input[type=text]{
+  color: black;
+  height: 20px;
+  /*padding-left:10px;*/
+  width: 99%;
+  box-shadow: 2px 2px 0 #828181 inset;
+}
+input[type=text]:hover{
+  background-color: #A2A2A2;
+}
+select:hover{
+  background-color: #4CAF50;
+}
+
+
+input[type=number]{
+  color: black;
+  height: 20px;
+  padding-left:10px;
+  width: 240px;
+  box-shadow: 2px 2px 0 #828181 inset;
+}
