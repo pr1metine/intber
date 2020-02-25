@@ -1,0 +1,22 @@
+{
+  "name": "intber",
+  "version": "1.0.0",
+  "description": "Ein neues Design für den internen Bereich der Schulwebseite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr1metine/intber.git"
+  },
+  "keywords": [
+    "intber"
+  ],
+  "author": "Quang Thanh TA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pr1metine/intber/issues"
+  },
+  "homepage": "https://github.com/pr1metine/intber#readme"
+}
