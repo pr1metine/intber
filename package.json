@@ -4,7 +4,7 @@
   "description": "Ein neues Design für den internen Bereich der Schulwebseite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "live-server --no-browser "
   },
   "repository": {
     "type": "git",
