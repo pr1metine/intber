@@ -8,7 +8,6 @@
 </head>
 
 <body class="light-bg">
-	
 	<?php if (isset($_SESSION['u_name'])) : ?>
 		<!-- PHP, Tags sollten im Endprodukt verschwinden -->
 
