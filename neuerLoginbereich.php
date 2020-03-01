@@ -19,8 +19,9 @@
 	<?php else : ?>
 		<!-- PHP -->
 		<?php
-			ob_start();
+
 			session_start();
+			ob_start();
 		?>
 		<div class="container">
 			<?php include('components/intber-logo.php') ?>
