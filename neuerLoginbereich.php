@@ -12,14 +12,15 @@
 	<?php if (isset($_SESSION['u_name'])) : ?>
 		<!-- PHP, Tags sollten im Endprodukt verschwinden -->
 
-		<button class="btn-neu text1 my-5px" type="submit" name="submit">
-			Abmelden
-		</button>
+		<form action="logout-inc.php" method="POST">
+			<button class="btn-neu text1 my-5px" type="submit" name="submit">
+				Abmelden
+			</button>
+		</form>
 
 	<?php else : ?>
 		<!-- PHP -->
 		<?php
-
 			session_start();
 			ob_start();
 		?>
