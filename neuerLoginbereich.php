@@ -18,7 +18,10 @@
 
 	<?php else : ?>
 		<!-- PHP -->
-        <?php session_start(); ob_start(); ?>
+		<?php
+			ob_start();
+			session_start();
+		?>
 		<div class="container">
 			<?php include('components/intber-logo.php') ?>
 			<!-- PHP -->
@@ -44,5 +47,4 @@
 	<?php endif ?>
 	<!-- PHP -->
 </body>
-
 </html>
