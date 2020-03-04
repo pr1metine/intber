@@ -1,6 +1,79 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap");
+@charset "UTF-8";
 * {
   font-family: Roboto Slab, 'Times New Roman', Times, serif;
+}
+
+* {
+  font-family: Roboto Slab, 'Times New Roman', Times, serif;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Bungee Inline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Bungee_Inline/BungeeInline-Regular.ttf");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Bungee Inline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Bungee_Inline/BungeeInline-Regular.ttf");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Bungee Inline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Bungee_Inline/BungeeInline-Regular.ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Bungee_Shade/BungeeShade-Regular.ttf);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Bungee_Shade/BungeeShade-Regular.ttf);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Bungee_Shade/BungeeShade-Regular.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
 }
 
 .content-center {
@@ -15,5 +88,78 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container {
+  width: 280px;
+}
+
+.img-logo {
+  display: block;
+  text-align: center;
+}
+
+.headline-1 {
+  margin: 5px 0;
+  font-family: Bungee Inline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #C4C4C4;
+  color: #E61A1A;
+}
+
+.uname-in {
+  margin: 5px 0;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #422424;
+  padding: 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #C4C4C4;
+}
+
+.btn-neu {
+  width: 100px;
+  height: 30px;
+  margin: 5px 0;
+  /* Markenfarbe (Primär) */
+  background-color: #E61A1A;
+  /* Neumorph */
+  -webkit-box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
+          box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
+  border-radius: 5px;
+  border: none;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #C4C4C4;
+}
+
+.btn-neu:active {
+  background-color: darkred;
+}
+
+.forgot-link {
+  color: #422424;
+  margin: 10px 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #C4C4C4;
 }
 /*# sourceMappingURL=index.css.map */
