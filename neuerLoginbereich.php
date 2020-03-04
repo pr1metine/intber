@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTBER - Login</title>
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/neu-style.css">
