@@ -6,13 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTBER - Login</title>
 	<link rel="stylesheet" href="css/legacy/login.css">
-	<!-- <link rel="stylesheet" href="css/neu-style.css"> -->
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="light-bg content-center">
+<body class="content-center">
 	<?php if (isset($_SESSION['u_name'])) : ?>
-		<!-- PHP, Tags sollten im Endprodukt verschwinden -->
 
 		<form action="logout-inc.php" method="POST">
 			<button class="btn-neu" type="submit" name="submit">
@@ -21,7 +19,6 @@
 		</form>
 
 	<?php else : ?>
-		<!-- PHP -->
 		<?php
 		session_start();
 		ob_start();
@@ -29,7 +26,6 @@
 		
 		<div class="container">
 			<img src="img/INTBER-Logo.svg" alt="INTBER" class="img-logo">
-			<!-- PHP -->
 
 			<form action="includes/login-inc.php" method="post">
 				<h1 class="headline-1">Anmelden</h1>
@@ -53,11 +49,12 @@
 				</button>
 			</form>
 
-			<a href="mailto:roman.pavlowski@gymnasium-melle.org?subject=Passwort%20zurücksetzen&body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">Passwort vergessen?</a>
+			<a href="mailto:roman.pavlowski@gymnasium-melle.org?subject=Passwort%20zurücksetzen&body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">
+				Passwort vergessen?
+			</a>
 		</div>
 
 	<?php endif ?>
-	<!-- PHP -->
 </body>
 
 </html>
