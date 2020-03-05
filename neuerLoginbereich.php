@@ -14,7 +14,7 @@
 		<!-- PHP, Tags sollten im Endprodukt verschwinden -->
 
 		<form action="logout-inc.php" method="POST">
-			<button class="btn-neu text1 my-5px" type="submit" name="submit">
+			<button class="btn-neu" type="submit" name="submit">
 				Abmelden
 			</button>
 		</form>

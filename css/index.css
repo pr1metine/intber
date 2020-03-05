@@ -1,8 +1,21 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap");
-@import url(c:\xampp\htdocs\intber\css\login.css);
 * {
   font-family: Roboto Slab, 'Times New Roman', Times, serif;
+}
+
+@font-face {
+  font-family: Roboto Slab;
+  src: url(fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf);
+}
+
+@font-face {
+  font-family: Bungee Inline;
+  src: url(fonts/Bungee_Inline/BungeeInline-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bungee Shade;
+  src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
 .content-center {
@@ -79,6 +92,7 @@
 }
 
 .seperator {
+  margin: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,8 +115,6 @@
   font-weight: normal;
   font-size: 11px;
   line-height: 15px;
-  padding: none;
-  margin: none;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40px;
           flex: 0 0 40px;

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap');
-@import "login.css";
+// @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap');
 @import "fonts/fonts";
 @import "partials/margins";
 
@@ -55,6 +54,7 @@ $dark-shade: #422424;
     }
 }
 .seperator{
+    @include my-5px();
     display: flex;
     flex-direction: row;
 
@@ -65,8 +65,6 @@ $dark-shade: #422424;
 
     .sep-text{
         @include text1;
-        padding: none;
-        margin: none;
         flex: 0 0 40px;
         text-align: center;
     }

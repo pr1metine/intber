@@ -1,7 +1,19 @@
-
-
 *{
     font-family: Roboto Slab, 'Times New Roman', Times, serif;
+}
+@font-face{
+  font-family: Roboto Slab;
+  src: url(fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf);
+}
+
+@font-face{
+  font-family: Bungee Inline;
+  src: url(fonts/Bungee_Inline/BungeeInline-Regular.ttf);
+}
+
+@font-face{
+  font-family: Bungee Shade;
+  src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
 @mixin display1 {
