@@ -26,13 +26,14 @@
 		session_start();
 		ob_start();
 		?>
+		
 		<div class="container">
 			<img src="img/INTBER-Logo.svg" alt="INTBER" class="img-logo">
 			<!-- PHP -->
 
 			<form action="includes/login-inc.php" method="post">
 				<h1 class="headline-1">Anmelden</h1>
-				
+
 				<button class="btn-iserv-oath" disabled>
 					<img src="img/IServ-Logo mit Box.svg" alt="IServ-Logo">
 					<span class="btn-text">Feature kommt irgendwann</span>
@@ -46,12 +47,13 @@
 
 				<input type="text" name="uname" placeholder="Nutzername" class="uname-in">
 				<input type="password" name="pword" placeholder="Passwort" class="uname-in">
+
 				<button class="btn-neu" type="submit" name="submit">
 					Anmelden
 				</button>
 			</form>
 
-			<a href="mailto:roman.pavlowski@gymnasium-melle.org?body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">Passwort vergessen?</a>
+			<a href="mailto:roman.pavlowski@gymnasium-melle.org?subject=Passwort%20zurücksetzen&body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">Passwort vergessen?</a>
 		</div>
 
 	<?php endif ?>
