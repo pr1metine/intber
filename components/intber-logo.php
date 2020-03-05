@@ -1,1 +1,0 @@
-<img src="img/INTBER-Logo.svg" alt="INTBER" class="img-logo">

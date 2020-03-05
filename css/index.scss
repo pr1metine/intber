@@ -54,7 +54,7 @@ $dark-shade: #422424;
     }
 }
 .seperator{
-    @include my-5px();
+    // @include my-5px();
     display: flex;
     flex-direction: row;
 
@@ -84,8 +84,10 @@ $dark-shade: #422424;
 .btn-neu{
     @include my-5px();
     @include text1;
-    width: 100px;
-    height: 30px;
+    // width: 100px;
+    // height: 30px;
+    padding: 10px 20px;
+    width: auto;
     /* Markenfarbe (Primär) */
     background-color: $brand-color;
     color: $light-shade;
