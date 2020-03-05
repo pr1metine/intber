@@ -1,0 +1,16 @@
+@mixin my-5px {
+    margin: 5px 0;
+}
+
+@mixin my-10px {
+    margin: 10px 0;
+}
+
+@mixin ml-5px {
+    margin-left: 5px;
+}
+
+@mixin mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

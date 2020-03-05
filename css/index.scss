@@ -1,24 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap');
 
 @import "fonts/fonts";
+@import "partials/margins";
 
-
-@mixin my-5px {
-    margin: 5px 0;
-}
-
-@mixin my-10px {
-    margin: 10px 0;
-}
-
-@mixin ml-5px {
-    margin-left: 5px;
-}
-
-@mixin mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
 $light-shade: #F0F0F0;
 $brand-color: #E61A1A;
 $dark-shade: #422424;
@@ -36,6 +20,8 @@ $dark-shade: #422424;
 }
 
 .img-logo{
+    @include my-10px();
+    @include mx-auto();
     display: block;
     text-align: center;
 }
@@ -85,6 +71,7 @@ $dark-shade: #422424;
     height: 30px;
     /* Markenfarbe (Primär) */
     background-color: #E61A1A;
+    color: $light-shade;
     /* Neumorph */
     box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
     border-radius: 5px;

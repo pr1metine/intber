@@ -23,6 +23,9 @@
 }
 
 .img-logo {
+  margin: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-align: center;
 }
@@ -100,6 +103,7 @@
   height: 30px;
   /* Markenfarbe (Primär) */
   background-color: #E61A1A;
+  color: #F0F0F0;
   /* Neumorph */
   -webkit-box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
           box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
