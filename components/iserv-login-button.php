@@ -1,4 +1,4 @@
-<button class="btn-iserv-oath btn-inactive my-5px" disabled>
+<button class="btn-iserv-oath" disabled>
     <img src="img/IServ-Logo mit Box.svg" alt="IServ-Logo">
-    <span class="text1 dark ml-5px">Feature kommt irgendwann</span>
+    <span class="btn-text">Feature kommt irgendwann</span>
 </button>

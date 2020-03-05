@@ -4,8 +4,8 @@
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTBER - Login</title>
-	<!-- <link rel="stylesheet" href="css/login.css">
-	<link rel="stylesheet" href="css/neu-style.css"> -->
+	<link rel="stylesheet" href="css/login.css">
+	<!-- <link rel="stylesheet" href="css/neu-style.css"> -->
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -30,21 +30,21 @@
 			<!-- PHP -->
 
 			<form action="includes/login-inc.php" method="post">
-				<h1 class="headline-1 display2 my-5px brand">Anmelden</h1>
+				<h1 class="headline-1">Anmelden</h1>
 
 				<?php include('components/iserv-login-button.php') ?>
 				<!-- PHP -->
 				<?php include('components/oder-divider.php') ?>
 				<!-- PHP -->
 
-				<input type="text" name="uname" placeholder="Nutzername" class="uname-in text1 my-5px light light-bg">
-				<input type="password" name="pword" placeholder="Passwort" class="uname-in text1 my-5px light light-bg">
-				<button class="btn-neu text1 my-5px" type="submit" name="submit">
+				<input type="text" name="uname" placeholder="Nutzername" class="uname-in">
+				<input type="password" name="pword" placeholder="Passwort" class="uname-in">
+				<button class="btn-neu" type="submit" name="submit">
 					Anmelden
 				</button>
 			</form>
 
-			<a href="mailto:roman.pavlowski@gymnasium-melle.org?body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link text1 align-center light my-10px">Passwort vergessen?</a>
+			<a href="mailto:roman.pavlowski@gymnasium-melle.org?body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">Passwort vergessen?</a>
 		</div>
 
 	<?php endif ?>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap');
-
+@import "login.css";
 @import "fonts/fonts";
 @import "partials/margins";
 
@@ -9,10 +9,11 @@ $dark-shade: #422424;
 
 .content-center{
     display: flex;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $light-shade;
 
     .container{
         width: 280px;
@@ -47,10 +48,27 @@ $dark-shade: #422424;
     box-shadow: -4px 4px 0px #CBCBDE;
     border-radius: 5px;
 
-    span{
-        @include text1;
+    .btn-text{
         @include ml-5px();
+        @include text1;
         color: $light-shade;
+    }
+}
+.seperator{
+    display: flex;
+    flex-direction: row;
+
+    hr{
+        flex: 1 1 0;
+        color: $dark-shade;
+    }
+
+    .sep-text{
+        @include text1;
+        padding: none;
+        margin: none;
+        flex: 0 0 40px;
+        text-align: center;
     }
 }
 .uname-in{
@@ -58,10 +76,11 @@ $dark-shade: #422424;
     @include text1;
     width: 100%;
     height: 30px;
-    border: 1px solid #422424;
+    border: 1px solid $dark-shade;
     padding: 10px 10px;
     box-sizing: border-box;
     border-radius: 5px;
+    background: none;
 }
 
 .btn-neu{
@@ -70,7 +89,7 @@ $dark-shade: #422424;
     width: 100px;
     height: 30px;
     /* Markenfarbe (Primär) */
-    background-color: #E61A1A;
+    background-color: $brand-color;
     color: $light-shade;
     /* Neumorph */
     box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
@@ -88,22 +107,4 @@ $dark-shade: #422424;
     color: $dark-shade;
     display: block;
     text-align: center;
-}
-
-.seperator{
-    display: flex;
-    flex-direction: row;
-
-    hr{
-        flex: 1 1 0;
-        color: $dark-shade;
-    }
-
-    .sep-text{
-        @include text1;
-        padding: none;
-        margin: none;
-        flex: 0 0 40px;
-        text-align: center;
-    }
 }
