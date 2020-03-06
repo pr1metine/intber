@@ -2,109 +2,116 @@
 @import "fonts/fonts";
 @import "partials/margins";
 
-$light-shade: #F0F0F0;
-$brand-color: #E61A1A;
+$light-shade: #f0f0f0;
+$brand-color: #e61a1a;
 $dark-shade: #422424;
 
-.content-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: $light-shade;
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $light-shade;
 
-    .container{
-        width: 280px;
-    }
+  .container {
+    width: 280px;
+  }
 }
 
-.img-logo{
-    @include my-10px();
-    @include mx-auto();
-    display: block;
-    text-align: center;
+.img-logo {
+  @include my-10px();
+  @include mx-auto();
+  display: block;
+  text-align: center;
 }
 
-.headline-1{
-    @include my-5px();
-    @include display2;
-    color: $brand-color;
+.headline-1 {
+  @include my-5px();
+  @include display2;
+  color: $brand-color;
 }
 
-.btn-iserv-oath{
-    @include my-5px();
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background: #CBCBDE;
-    /* Gray 3 */
-    border: 2px solid #828282;
-    box-sizing: border-box;
-    /* Inaktiver Button */
-    box-shadow: -4px 4px 0px #CBCBDE;
-    border-radius: 5px;
+.btn-iserv-oath {
+  @include my-5px();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #cbcbde;
+  /* Gray 3 */
+  border: 2px solid #828282;
+  box-sizing: border-box;
+  /* Inaktiver Button */
+  box-shadow: -4px 4px 0px #cbcbde;
+  border-radius: 5px;
 
-    .btn-text{
-        @include ml-5px();
-        @include text1;
-        color: $light-shade;
-    }
-}
-.seperator{
-    // @include my-5px();
-    display: flex;
-    flex-direction: row;
-
-    hr{
-        flex: 1 1 0;
-        color: $dark-shade;
-    }
-
-    .sep-text{
-        @include text1;
-        flex: 0 0 40px;
-        text-align: center;
-    }
-}
-.uname-in{
-    @include my-5px();
+  .btn-text {
+    @include ml-5px();
     @include text1;
-    width: 100%;
-    height: 30px;
-    border: 1px solid $dark-shade;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background: none;
-}
-
-.btn-neu{
-    @include my-5px();
-    @include text1;
-    // width: 100px;
-    // height: 30px;
-    padding: 10px 20px;
-    width: auto;
-    /* Markenfarbe (Primär) */
-    background-color: $brand-color;
     color: $light-shade;
-    /* Neumorph */
-    box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
-    border-radius: 5px;
-    border: none;
+  }
+}
+.seperator {
+  // @include my-5px();
+  display: flex;
+  flex-direction: row;
 
-    &:active{
-        background-color: darkred;
-    }
+  hr {
+    flex: 1 1 0;
+    color: $dark-shade;
+  }
+
+  .sep-text {
+    @include text1;
+    flex: 0 0 40px;
+    text-align: center;
+  }
+}
+.uname-in {
+  @include my-5px();
+  @include text1;
+  font-weight: 900;
+  width: 100%;
+  height: 30px;
+  border: 1px solid $dark-shade;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
+
+  // &::placeholder{
+  //     &:before{
+  //         content: "What?";
+  //     }
+  // }
 }
 
-.forgot-link{
-    @include my-10px();
-    @include text1;
-    color: $dark-shade;
-    display: block;
-    text-align: center;
+.btn-neu {
+  @include my-5px();
+  @include text1;
+  min-width: 100px;
+  min-height: 30px;
+  padding: 10px 20px;
+  width: auto;
+  /* Markenfarbe (Primär) */
+  background-color: $brand-color;
+  color: $light-shade;
+  /* Neumorph */
+  box-shadow: 3px -3px 10px rgba(255, 255, 255, 0.05), -3px 3px 10px rgba(137, 16, 16, 0.1);
+  border-radius: 5px;
+  border: none;
+
+  &:active {
+    background-color: darkred;
+  }
+}
+
+.forgot-link {
+  @include my-10px();
+  @include text1;
+  color: $dark-shade;
+  display: block;
+  text-align: center;
 }

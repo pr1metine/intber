@@ -1,48 +1,53 @@
-*{
-    font-family: Roboto Slab, 'Times New Roman', Times, serif;
-}
-@font-face{
+$font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif;
+
+@font-face {
   font-family: Roboto Slab;
   src: url(fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face{
+@font-face {
   font-family: Bungee Inline;
   src: url(fonts/Bungee_Inline/BungeeInline-Regular.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face{
+@font-face {
   font-family: Bungee Shade;
   src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @mixin display1 {
-    font-family: Bungee Shade;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;
-    text-transform: capitalize;
-    font-feature-settings: 'case' on;
-    // color: #C4C4C4;
+  font-family: Bungee Shade, $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+  font-feature-settings: "case" on;
+  // color: #C4C4C4;
 }
 
 @mixin display2 {
-    font-family: Bungee Inline;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    text-transform: capitalize;
-    // color: #C4C4C4;
+  font-family: Bungee Inline, $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  text-transform: capitalize;
+  // color: #C4C4C4;
 }
 
 @mixin text1 {
-    font-family: Roboto Slab;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    // color: #C4C4C4;
+  font-family: Roboto Slab, $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  // color: #C4C4C4;
 }
