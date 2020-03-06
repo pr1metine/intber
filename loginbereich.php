@@ -1,44 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-  </head>
-  <body>
+<html lang="de">
 
-<?php
-  if(isset($_SESSION['u_name'])){
-  echo '<div class="loginbereich">';
-    echo '<form action="logout-inc.php" method="POST">';
-    echo '<button type="submit" name="submit">logout</button>';
-    echo '</form>';
-  echo '</div>';
-  }else{
-  session_start();
-  ob_start();
-    /*include("includes/functions.php");
-    include("includes/dbc-inc.php");
-    //Zugriff auf die Datenbanken zum Auslesen der Werte-->
-    $q = "SELECT * FROM user;";
-    $res = mysqli_query($conn,$q) or die(mysql_error());
-    $row = mysqli_fetch_assoc($res);
-    mysqli_data_seek($res,0);$cr=0;
-    while($row = mysqli_fetch_assoc($res)){
-        $user[$cr]=$row['uname'];
-        $cr++;
-    }*/
-    echo '<div class="grid_login">';
-      echo '<div class="login">';
-        echo '<form action="includes/login-inc.php" method="POST">';
-        //echo get_options("uname",$user,'');
-        echo '<input type="text" name="uname" placeholder="Benutzername"></br></br>';
-        echo '<input type="password" name="pword" placeholder="Passwort"></br></br>
-              <button type="submit" name="submit">login</button>
-              </form>';
-      echo '</div>';
-    echo '</div>';
-  }
-?>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INTBER - Login</title>
+	<link rel="stylesheet" href="css/index.min.css">
+	<script src="https://kit.fontawesome.com/57a2ce3136.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="content-center">
+	<?php if (isset($_SESSION['u_name'])) : ?>
+
+		<div class="loginbereich">
+			<form action="logout-inc.php" method="POST">
+				<button type="submit" name="submit">
+					Abmelden
+				</button>
+			</form>
+		</div>
+
+	<?php else : ?>
+		<?php
+		session_start();
+		ob_start();
+		?>
+
+		<div class="container">
+			<img src="img/INTBER-Logo.svg" alt="INTBER" class="img-logo">
+
+			<form action="includes/login-inc.php" method="post">
+				<h1 class="headline-1">Anmelden</h1>
+
+				<button class="btn-iserv-oath" disabled>
+					<img src="img/IServ-Logo mit Box.svg" alt="IServ-Logo">
+					<span class="btn-text">Feature kommt irgendwann</span>
+				</button>
+
+				<div class="seperator">
+					<hr>
+					<span class="sep-text">ODER</span>
+					<hr>
+				</div>
+
+				<input type="text" name="uname" placeholder="&#xf007;  Nutzername" class="uname-in">
+				<input type="password" name="pword" placeholder="&#xf09c;  Passwort" class="uname-in">
+
+				<button class="btn-neu" type="submit" name="submit">
+					Anmelden
+				</button>
+			</form>
+
+			<a href="mailto:roman.pavlowski@gymnasium-melle.org?subject=Passwort%20zurücksetzen&body=Sehr%20geehrter%20Herr%20Pavlowski,%0D%0A%0D%0ALeider%20habe%20ich%20mein%20Passwort%20für%20den%20internen%20Bereich%20der%20Schulwebseite%20vergessen." class="forgot-link">
+				Passwort vergessen?
+			</a>
+		</div>
+
+	<?php endif ?>
 </body>
+
 </html>
