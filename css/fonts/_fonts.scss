@@ -21,6 +21,12 @@ $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif
   src: url(./Font_Awesome/fa-solid-900.ttf);
 }
 
+@font-face{
+  font-family: Roboto Slab Regular;
+  font-weight: 900;
+  src: url(fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+
 @mixin display1 {
   font-family: Bungee Shade, $font-stack;
   font-style: normal;
@@ -50,4 +56,14 @@ $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif
   font-size: 11px;
   line-height: 15px;
   // color: #C4C4C4;
+}
+
+@mixin text1-w-fa{
+  font-family: "Roboto Slab Regular", "Font Awesome 5 Free", $font-stack;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 15px;
+  // color: #C4C4C4;
+
 }
