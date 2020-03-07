@@ -5,9 +5,7 @@
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>INTBER - Login</title>
-	<link rel="stylesheet" href="css/index.min.css">
-	<script src="https://kit.fontawesome.com/57a2ce3136.js" crossorigin="anonymous"></script>
-</head>
+	<link rel="stylesheet" href="css/index.min.css"></head>
 
 <body class="content-center">
 	<?php if (isset($_SESSION['u_name'])) : ?>

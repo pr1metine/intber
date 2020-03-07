@@ -1,24 +1,24 @@
 $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif;
 
+// Font-Faces: Hier werden Google und Awesome Fonts definiert
 @font-face {
   font-family: Roboto Slab;
   src: url(fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
-    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: Bungee Inline;
   src: url(fonts/Bungee_Inline/BungeeInline-Regular.ttf);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
-    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: Bungee Shade;
   src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
-    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Font Awesome 5 Free;
+  src: url(./Font_Awesome/fa-solid-900.ttf);
 }
 
 @mixin display1 {
@@ -44,7 +44,7 @@ $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif
 }
 
 @mixin text1 {
-  font-family: Roboto Slab, $font-stack;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;

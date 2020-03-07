@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/pr1metine/intber/issues"
   },
-  "homepage": "https://github.com/pr1metine/intber#readme"
+  "homepage": "https://github.com/pr1metine/intber#readme",
+  "dependencies": {}
 }
