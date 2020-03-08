@@ -1,5 +1,5 @@
 // @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Inline|Bungee+Shade|Roboto+Slab&display=swap');
-@import "../fonts/fonts";
+@import "fonts";
 @import "margins";
 
 $light-shade: #f0f0f0;
@@ -70,6 +70,7 @@ $dark-shade: #422424;
     text-align: center;
   }
 }
+
 .uname-in {
   @include my-5px();
   @include text1();
