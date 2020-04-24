@@ -1,4 +1,4 @@
-$font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif;
+$font-stack: Roboto Slab, "FontAwesome", "Times New Roman", Times, serif;
 
 // Font-Faces: Hier werden Google und Awesome Fonts definiert
 @font-face {
@@ -17,7 +17,7 @@ $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif
 }
 
 @font-face {
-  font-family: Font Awesome 5 Free;
+  font-family: "FontAwesome";
   src: url(fonts/Font_Awesome/fa-solid-900.ttf);
 }
 
@@ -59,7 +59,7 @@ $font-stack: Roboto Slab, "Font Awesome 5 Free", "Times New Roman", Times, serif
 }
 
 @mixin text1-w-fa{
-  font-family: "Roboto Slab Regular", "Font Awesome 5 Free", $font-stack;
+  font-family: "Roboto Slab Regular", "FontAwesome", $font-stack;
   font-style: normal;
   font-weight: 900;
   font-size: 11px;
